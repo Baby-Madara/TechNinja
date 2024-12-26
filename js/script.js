@@ -83,7 +83,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 top: offsetPosition,
                 behavior: 'smooth'
             });
-            navLinksContainer.classList.remove('open'); // Close the menu after clicking a link
+            navLinksContainer.classList.toggle('open'); // Close the menu after clicking a link
+            // navLinksContainer.classList.remove('open'); // Close the menu after clicking a link
         });
     });
 
@@ -92,7 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinksContainer.classList.toggle('open');
     });
 });
-
 
 
 ////////////////////////////////////////// 
