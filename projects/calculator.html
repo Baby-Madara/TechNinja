@@ -121,6 +121,7 @@
             <button id="btnf"       class="num" onclick="appendValue('.')">.</button>
             <button id="btnper"     class="num" onclick="appendValue('%')">%</button>
             <button id="btneq"      class="op" onclick="calculateResult()">=</button>
+            <button id="btncoma"     class="op" onclick="appendValue(',')">,</button>
             <!-- <button id="btnfact"    class="op" onclick="appendValue('!')">!</button> -->
         </div>
     </div>
@@ -237,6 +238,7 @@
             'e': 'btne',
             'p': 'btnpi',
             '%': 'btnper',
+            ',': 'btncoma',
             ' ': 'btnclr',
             'Enter': 'btneq',
             'Backspace': 'btndel',
