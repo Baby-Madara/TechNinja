@@ -15,24 +15,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Define skills and projects arrays
     const skills = [
-        { id: 'skill6', imgSrc: 'images/frontend.png', title: 'Frontend' },
-        { id: 'skill3', imgSrc: 'images/python.png', title: 'Python' },
-        { id: 'skill4', imgSrc: 'images/c.png', title: 'C' },
-        { id: 'skill5', imgSrc: 'images/c++.png', title: 'C++' },
-        { id: 'skill1', imgSrc: 'images/arduino.png', title: 'Arduino' },
-        { id: 'skill2', imgSrc: 'images/esp32.png', title: 'ESP32' },
-        { id: 'skill8', imgSrc: 'images/matlab.png', title: 'MATLAB' },
-        { id: 'skill8', imgSrc: 'images/ros.webp', title: 'ROS & ROS2' },
-        { id: 'skill8', imgSrc: 'images/solidworks.png', title: 'SOLIDWORKS' },
+        { id: 'skill6',  imgSrc: 'images/frontend.png', title: 'Frontend' },
+        { id: 'skill3',  imgSrc: 'images/python.png', title: 'Python' },
+        { id: 'skill4',  imgSrc: 'images/c.png', title: 'C' },
+        { id: 'skill5',  imgSrc: 'images/c++.png', title: 'C++' },
+        { id: 'skill1',  imgSrc: 'images/arduino.png', title: 'Arduino' },
+        { id: 'skill2',  imgSrc: 'images/esp32.png', title: 'ESP32' },
+        { id: 'skill8',  imgSrc: 'images/matlab.png', title: 'MATLAB' },
+        { id: 'skill9',  imgSrc: 'images/ros.webp', title: 'ROS & ROS2' },
+        { id: 'skill11', imgSrc: 'images/solidworks.png', title: 'SOLIDWORKS' },
+        { id: 'skill12', imgSrc: 'images/fusion.png', title: 'Fusion' },
     ];
 
     const projects = [
-        { title: 'Portfolio Website',               imgSrc: 'images/portfolio-website.png', description: 'A website to represent my skills and projects',   link: './index.html' },
-        { title: 'Scientific Calculator',           imgSrc: 'images/calculator.png',        description: 'Made with JavaScript',                            link: 'https://baby-madara.github.io/Calculator-JS/' },
-        { title: 'Recording Piano using Arduino',   imgSrc: 'https://csg.tinkercad.com/things/e7aTJ7GvGUO/t725.png?rev=1648532957095000000&s=&v=1&type=circuits', description: 'A piano made by Arduino that can be used to play tones and record them. Try its simulated version on TinkerCAD!', link: 'https://www.tinkercad.com/things/e7aTJ7GvGUO' },
-        { title: '12 DoF Quadruped Robot',          imgSrc: 'images/quadruped-robot.jpeg',  description: 'A versatile quadruped robot, developed using MATLAB, ROS2, SOLIDWORKS, and implemented on ESP32. Provided by OTA feature to update firmware wirelessly', link: '#', alert: 'Sorry, this project is not available right now!' },
-        { title: 'Smart Home',                      imgSrc: 'images/smart-home.jpg',        description: 'Based on ATmega32, the Smart Home system controls the lights, fans, and AC over Bluetooth. Multiple users can control it, each with different access levels.', link: '#', alert: 'Sorry, not available right now!' },
-        { title: '3D Printer',                      imgSrc: 'images/3d_printer.jpg',        description: 'A homemade 3D Printer for simple gadgets and students tasks', link: '#', alert: 'Sorry, not available right now!' },
+        { title: 'Portfolio Website',               imgSrc: 'images/portfolio-website.png', link: './',                                                             description: 'A website to represent my skills and projects'},
+        { title: 'Scientific Calculator',           imgSrc: 'images/calculator.png',        link: 'https://baby-madara.github.io/Calculator-JS/',                   description: 'Made with JavaScript'},
+        { title: 'Recording Piano using Arduino',   imgSrc: 'images/piano.png',             link: 'https://www.tinkercad.com/things/e7aTJ7GvGUO',                   description: 'A piano made by Arduino that can be used to play tones and record them. Try its simulated version on TinkerCAD!'},
+        { title: '12 DoF Quadruped Robot',          imgSrc: 'images/quadruped-robot.jpeg',  link: '#', alert: 'Sorry, this project is not available right now!',    description: 'A versatile quadruped robot, developed using MATLAB, ROS2, SOLIDWORKS, and implemented on ESP32. Provided by OTA feature to update firmware wirelessly'},
+        { title: 'Smart Home',                      imgSrc: 'images/smart-home.jpg',        link: '#', alert: 'Sorry, not available right now!',                    description: 'Based on ATmega32, the Smart Home system controls the lights, fans, and AC over Bluetooth. Multiple users can control it, each with different access levels.'},
+        { title: '3D Printer',                      imgSrc: 'images/3d_printer.jpg',        link: '#', alert: 'Sorry, not available right now!',                    description: 'A homemade 3D Printer for simple gadgets and students tasks'},
     ];
 
     // Function to generate skills HTML
