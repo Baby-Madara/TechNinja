@@ -107,10 +107,20 @@ const cardWidth = 320; // card width + gap
 
 // Scroll handling
 cardContainer.addEventListener('scroll', () => {
-    const maxScroll = cardContainer.scrollWidth/2 ;
-    // console.log(`maxScroll: ${maxScroll}`);
-    // console.log(`scrollLeft: ${cardContainer.scrollLeft}`);
-    // console.log(`scrollRight: ${cardContainer.scrollRight}`);
+    const maxScroll = cardContainer.scrollWidth - cardContainer.clientWidth;
+    if (cardContainer.scrollLeft <= 10) {
+        leftArrow.style.display = 'none';
+        rightArrow.style.display = 'block';
+    } else if (cardContainer.scrollLeft + 10 >= maxScroll ) {
+        leftArrow.style.display = 'block';
+        rightArrow.style.display = 'none';
+    } else {
+        leftArrow.style.display = 'block';
+        rightArrow.style.display = 'block';
+    }
+    console.log(`maxScroll: ${maxScroll}`);
+    console.log(`scrollLeft: ${cardContainer.scrollLeft}`);
+    console.log(``);
 
 });
 
