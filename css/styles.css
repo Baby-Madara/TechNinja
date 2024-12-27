@@ -304,6 +304,20 @@ footer .social-links a:hover {
         
         padding: 15px;
     }
+
+    .arrow {
+        -khtml-user-select: none;
+        -o-user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-drag: none;
+        -moz-user-drag: none;
+        -ms-user-drag: none;
+        user-select: none;
+    }
 }
 
 
@@ -661,6 +675,7 @@ draft dark:
     cursor: pointer;
     display: flex;
     align-items: center;
+    align-content: center;
     justify-content: center;
     z-index: 2;
     transition: visibility 0.3s smooth;
