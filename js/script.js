@@ -15,16 +15,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Define skills and projects arrays
     const skills = [
-        { id: 'skill6',  imgSrc: 'images/frontend.png', title: 'Frontend' },
-        { id: 'skill3',  imgSrc: 'images/python.png', title: 'Python' },
-        { id: 'skill4',  imgSrc: 'images/c.png', title: 'C' },
-        { id: 'skill5',  imgSrc: 'images/c++.png', title: 'C++' },
-        { id: 'skill1',  imgSrc: 'images/arduino.png', title: 'Arduino' },
-        { id: 'skill2',  imgSrc: 'images/esp32.png', title: 'ESP32' },
-        { id: 'skill8',  imgSrc: 'images/matlab.png', title: 'MATLAB' },
-        { id: 'skill9',  imgSrc: 'images/ros.webp', title: 'ROS & ROS2' },
-        { id: 'skill11', imgSrc: 'images/solidworks.png', title: 'SOLIDWORKS' },
-        { id: 'skill12', imgSrc: 'images/fusion.png', title: 'Fusion' },
+        { id: 'skill01',   title: 'Frontend',     imgSrc: 'images/frontend.png' },
+        { id: 'skill02',   title: 'Python',       imgSrc: 'images/python.png' },
+        { id: 'skill03',   title: 'C',            imgSrc: 'images/c.png' },
+        { id: 'skill04',   title: 'C++',          imgSrc: 'images/c++.png' },
+        { id: 'skill05',   title: 'Arduino',      imgSrc: 'images/arduino.png' },
+        { id: 'skill06',   title: 'ESP32',        imgSrc: 'images/esp32.png' },
+        { id: 'skill07',   title: 'MATLAB',       imgSrc: 'images/matlab.png' },
+        { id: 'skill08',   title: 'ROS & ROS2',   imgSrc: 'images/ros.webp' },
+        { id: 'skill09',   title: 'SOLIDWORKS',   imgSrc: 'images/solidworks.png' },
+        { id: 'skill10',   title: 'Fusion',       imgSrc: 'images/fusion.png' },
     ];
 
     const projects = [
