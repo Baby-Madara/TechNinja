@@ -1,5 +1,3 @@
-
-// animation, menu button, etc.
 document.addEventListener('DOMContentLoaded', () => {
     const themeToggleButton = document.getElementById('theme-toggle');
     const backToTopButton = document.getElementById('back-to-top');
@@ -14,6 +12,57 @@ document.addEventListener('DOMContentLoaded', () => {
     const contact_heading = document.querySelector('#contact-heading');
 
     let current_theme = 'dark';
+
+    // Define skills and projects arrays
+    const skills = [
+        { id: 'skill6', imgSrc: 'images/frontend.png', title: 'Frontend' },
+        { id: 'skill3', imgSrc: 'images/python.png', title: 'Python' },
+        { id: 'skill4', imgSrc: 'images/c.png', title: 'C' },
+        { id: 'skill5', imgSrc: 'images/c++.png', title: 'C++' },
+        { id: 'skill1', imgSrc: 'images/arduino.png', title: 'Arduino' },
+        { id: 'skill2', imgSrc: 'images/esp32.png', title: 'ESP32' },
+        { id: 'skill8', imgSrc: 'images/matlab.png', title: 'MATLAB' },
+        { id: 'skill8', imgSrc: 'images/ros.webp', title: 'ROS & ROS2' },
+        { id: 'skill8', imgSrc: 'images/solidworks.png', title: 'SOLIDWORKS' },
+    ];
+
+    const projects = [
+        { title: 'Portfolio Website',               imgSrc: 'images/portfolio-website.png', description: 'A website to represent my skills and projects',   link: './index.html' },
+        { title: 'Scientific Calculator',           imgSrc: 'images/calculator.png',        description: 'Made with JavaScript',                            link: 'https://baby-madara.github.io/Calculator-JS/' },
+        { title: 'Recording Piano using Arduino',   imgSrc: 'https://csg.tinkercad.com/things/e7aTJ7GvGUO/t725.png?rev=1648532957095000000&s=&v=1&type=circuits', description: 'A piano made by Arduino that can be used to play tones and record them. Try its simulated version on TinkerCAD!', link: 'https://www.tinkercad.com/things/e7aTJ7GvGUO' },
+        { title: '12 DoF Quadruped Robot',          imgSrc: 'images/quadruped-robot.jpeg',  description: 'A versatile quadruped robot, developed using MATLAB, ROS2, SOLIDWORKS, and implemented on ESP32. Provided by OTA feature to update firmware wirelessly', link: '#', alert: 'Sorry, this project is not available right now!' },
+        { title: 'Smart Home',                      imgSrc: 'images/smart-home.jpg',        description: 'Based on ATmega32, the Smart Home system controls the lights, fans, and AC over Bluetooth. Multiple users can control it, each with different access levels.', link: '#', alert: 'Sorry, not available right now!' },
+        { title: '3D Printer',                      imgSrc: 'images/3d_printer.jpg',        description: 'A homemade 3D Printer for simple gadgets and students tasks', link: '#', alert: 'Sorry, not available right now!' },
+    ];
+
+    // Function to generate skills HTML
+    const generateSkillsHTML = () => {
+        const skillCardsContainer = document.querySelector('.card-container');
+        skillCardsContainer.innerHTML = skills.map(skill => `
+            <div class="skill-card" id="${skill.id}">
+                <img src="${skill.imgSrc}" alt="${skill.title}">
+                <h3>${skill.title}</h3>
+            </div>
+        `).join('');
+    };
+
+    // Function to generate projects HTML
+    const generateProjectsHTML = () => {
+        const projectCardsContainer = document.querySelector('.project-cards');
+        projectCardsContainer.innerHTML = projects.map(project => `
+            <div class="card">
+                <h2>${project.title}</h2>
+                <img src="${project.imgSrc}" alt="${project.title}">
+                <p>${project.description}</p>
+                <a href="${project.link}" ${project.alert ? `onclick="window.alert('${project.alert}')"` : `target="_blank"`} rel="noopener"><span>View Project</span></a>
+            </div>
+        `).join('');
+    };
+
+    // Call the functions to generate HTML
+    generateSkillsHTML();
+    generateProjectsHTML();
+
     // Hide menu button on larger screens
     const updateMenuButtonVisibility = () => {
         if (window.innerWidth > 768) {
@@ -84,7 +133,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 behavior: 'smooth'
             });
             navLinksContainer.classList.toggle('open'); // Close the menu after clicking a link
-            // navLinksContainer.classList.remove('open'); // Close the menu after clicking a link
         });
     });
 
@@ -92,14 +140,12 @@ document.addEventListener('DOMContentLoaded', () => {
     menuToggleButton.addEventListener('click', () => {
         navLinksContainer.classList.toggle('open');
     });
+    
+    // Set initial scroll position to the middle for seamless experience
+    cardContainer.scrollBy({left: cardContainer.scrollWidth / 2, behavior: 'auto'});
 });
 
-
-////////////////////////////////////////// 
-
-
 // skills scrolling
-
 const cardContainer = document.querySelector('.card-container');
 const leftArrow = document.querySelector('.arrow.left');
 const rightArrow = document.querySelector('.arrow.right');
@@ -108,23 +154,20 @@ const cardWidth = 320; // card width + gap
 // Scroll handling
 cardContainer.addEventListener('scroll', () => {
     const maxScroll = cardContainer.scrollWidth - cardContainer.clientWidth;
-    if (cardContainer.scrollLeft <= 10) {
+    const scrollExtremes = 10; // 10px offset for smooth experience
+    if (Math.floor(cardContainer.scrollLeft) <= scrollExtremes) {
         leftArrow.style.display = 'none';
         rightArrow.style.display = 'block';
-    } else if (cardContainer.scrollLeft + 10 >= maxScroll ) {
+    } else if (Math.floor(cardContainer.scrollLeft) >= maxScroll - scrollExtremes) {
         leftArrow.style.display = 'block';
         rightArrow.style.display = 'none';
     } else {
         leftArrow.style.display = 'block';
         rightArrow.style.display = 'block';
     }
-    // console.log(`maxScroll: ${maxScroll}`);
-    // console.log(`scrollLeft: ${cardContainer.scrollLeft}`);
-    // console.log(``);
-
 });
 
-// Arrow button scrolling
+// Arrow buttons scrolling
 rightArrow.addEventListener('click', () => {
     cardContainer.scrollBy({ left: cardWidth, behavior: 'smooth' });
 });
@@ -133,5 +176,3 @@ leftArrow.addEventListener('click', () => {
     cardContainer.scrollBy({ left: -cardWidth, behavior: 'smooth' });
 });
 
-// Set initial scroll position to the middle for seamless experience
-cardContainer.scrollLeft = cardContainer.scrollWidth / 4;
