@@ -118,9 +118,9 @@ cardContainer.addEventListener('scroll', () => {
         leftArrow.style.display = 'block';
         rightArrow.style.display = 'block';
     }
-    console.log(`maxScroll: ${maxScroll}`);
-    console.log(`scrollLeft: ${cardContainer.scrollLeft}`);
-    console.log(``);
+    // console.log(`maxScroll: ${maxScroll}`);
+    // console.log(`scrollLeft: ${cardContainer.scrollLeft}`);
+    // console.log(``);
 
 });
 
