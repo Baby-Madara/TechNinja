@@ -28,12 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     const projects = [
-        { title: 'Portfolio Website',               imgSrc: 'images/portfolio-website.png', link: './',                                                             description: 'A website to represent my skills and projects'},
-        { title: 'Scientific Calculator',           imgSrc: 'images/calculator.png',        link: 'https://baby-madara.github.io/Calculator-JS/',                   description: 'Made with JavaScript'},
-        { title: 'Recording Piano using Arduino',   imgSrc: 'images/piano.png',             link: 'https://www.tinkercad.com/things/e7aTJ7GvGUO',                   description: 'A piano made by Arduino that can be used to play tones and record them. Try its simulated version on TinkerCAD!'},
-        { title: '12 DoF Quadruped Robot',          imgSrc: 'images/quadruped-robot.jpeg',  link: '#', alert: 'Sorry, this project is not available right now!',    description: 'A versatile quadruped robot, developed using MATLAB, ROS2, SOLIDWORKS, and implemented on ESP32. Provided by OTA feature to update firmware wirelessly'},
-        { title: 'Smart Home',                      imgSrc: 'images/smart-home.jpg',        link: '#', alert: 'Sorry, not available right now!',                    description: 'Based on ATmega32, the Smart Home system controls the lights, fans, and AC over Bluetooth. Multiple users can control it, each with different access levels.'},
-        { title: '3D Printer',                      imgSrc: 'images/3d_printer.jpg',        link: '#', alert: 'Sorry, not available right now!',                    description: 'A homemade 3D Printer for simple gadgets and students tasks'},
+        { title: 'Portfolio Website',               imgSrc: 'images/portfolio-website.png',  link: './',                                                                 description: 'A website to represent my skills and projects'},
+        { title: 'Scientific Calculator',           imgSrc: 'images/calculator.png',         link: 'https://baby-madara.github.io/Calculator-JS/',                       description: 'Made with JavaScript'},
+        { title: 'Recording Piano using Arduino',   imgSrc: 'images/piano.png',              link: 'https://www.tinkercad.com/things/e7aTJ7GvGUO',                       description: 'A piano made by Arduino that can be used to play tones and record them. Try its simulated version on TinkerCAD!'},
+        { title: 'Smart Home',                      imgSrc: 'images/smart-home.jpg',         link: 'https://github.com/Baby-Madara/AMIT_Embedded_Systems_FinalProject',  description: 'Based on ATmega32, the Smart Home system controls the lights, fans, and AC over Bluetooth. Multiple users can control it, each with different access levels.'},
+        { title: '12 DoF Quadruped Robot',          imgSrc: 'images/quadruped-robot.jpeg',   link: '#',   alert: 'Sorry, not available right now!',                      description: 'A versatile quadruped robot, developed using MATLAB, ROS2, SOLIDWORKS, and implemented on ESP32. Provided by OTA feature to update firmware wirelessly'},
+        { title: '3D Printer',                      imgSrc: 'images/3d_printer.jpg',         link: '#',   alert: 'Sorry, not available right now!',                      description: 'A homemade 3D Printer for simple gadgets and students tasks'},
     ];
 
     // Function to generate skills HTML

@@ -568,68 +568,12 @@ h1.title.dark-theme, h1 {
     /* Hide scrollbar for Chrome, Safari, and Edge */
 }
 
-/* 
-draft dark:
-#0d111d
-#090c15
-#70dffe
-#50a2f1
-
-#skill1 {
-    background: #00cccc;
-}
-
-#skill2 {
-    background: #cc00cc;
-}
-
-#skill3 {
-    background: #1E3A8A;
-    background: #191970;
-}
-
-#skill4 {
-    background: #2E0854;
-    background: #4B0082;
-}
-
-#skill5 {
-    background: #000000;
-}
-#skill6 {
-    background: #2F2F2F;
-    background: #36454F;
-}
-#skill7 {
-    background: #7DF9FF;
-}
-#skill8 {
-    background: #9F00FF;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .container {
     /* padding: 20px;
     max-width: 1200px; */
     margin: auto;
     position: relative;
 }
-
-
 
 .card-wrapper {
     position: relative;
