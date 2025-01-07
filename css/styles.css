@@ -646,3 +646,19 @@ h1.title.dark-theme, h1 {
 .arrow:hover {
     background: rgba(0, 0, 0, 0.7);
 }
+
+
+
+abbr {
+    font-weight: bolder;
+    /* font-display: block; */
+}
+
+/* #about p {
+    -khtml-text-justify: distribute-all-lines;
+    -o-text-justify: distribute-all-lines;
+    -moz-text-justify: distribute-all-lines;
+    -ms-text-justify: distribute-all-lines;
+    -webkit-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+} */
