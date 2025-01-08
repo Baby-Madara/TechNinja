@@ -1,3 +1,6 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
 :root {
     --primary-color: #00cccc;
     --secondary-color: #cc00cc;
@@ -34,6 +37,7 @@ html {
     
      */
     
+    display: flexbox;
     scroll-behavior: smooth;
     transition: all 0.3s ease;
 
@@ -46,6 +50,10 @@ html {
     -webkit-user-select: none;
     -ms-user-select: none;
     cursor: default;  */
+}
+
+body {
+    margin:0;
 }
 
 h1.title, h2 {
@@ -66,8 +74,8 @@ h1.title {
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: #0f172a;
-    /* background-color: var(--nav-background-color); */
+    /* background-color: #0f172a; */
+    background-color: var(--nav-background-color);
     position: fixed;
     width: 100%;
     top: 0;
@@ -75,7 +83,7 @@ nav {
     z-index: 1000;
     list-style: none;
     box-shadow: 0px 4px 6px #00ffff11;
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 nav .logo {
@@ -110,7 +118,7 @@ nav ul {
 nav a {
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 15px;
     transition: color 0.3s;
 }
 
@@ -241,6 +249,7 @@ footer .social-links a:hover {
 @media (max-width: 768px) {
     #menu-toggle {
         display: flex;
+        grid-column: 3;
     }
 
     .nav-links {
@@ -359,7 +368,7 @@ html {
 }
 
 
-body {
+#root {
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -369,9 +378,11 @@ body {
     color: var(--text-color-light);
     transition: background-color 0.3s ease 0s;
     transition: background 0.3s ease 0s;
+    border: 0;
+
 }
 
-body.dark-theme {
+#root.dark-theme {
     /* background-color: linear-gradient(45deg, var(--background-color-dark), #ffffff); */
     background-color: var(--background-color-dark);
     color: var(--text-color-dark);
@@ -543,7 +554,7 @@ h1.title.dark-theme, h1 {
     -webkit-background-clip: none;
     -webkit-text-fill-color: #000b16;
     background-clip: none;
-    color: #000b16;
+    /* color: #000b16; */
 }
 
 .card-wrapper {

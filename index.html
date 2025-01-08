@@ -1,76 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Ahmed Farahat</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="./src/images/portfolio-website.png">
+    <!-- <link rel="stylesheet" href="/src/styles.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmed Farahat - Portfolio</title>
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/x-icon" href="./images/portfolio-website.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> -->
 </head>
-<body class="dark-theme">
-    <nav class="dark-theme">
-        <div class="logo"><a href="https://baby-madara.github.io/TechNinja/">TechNinja</a></div>
-        <ul class="nav-links dark-theme" id="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="ctrl-buttons">
-            <button id="back-to-top"><i class="fa fa-arrow-up"></i></button>
-            <button id="theme-toggle"><i class="fa fa-adjust"></i></button>
-            <button id="menu-toggle"><i class="fa fa-bars"></i></button>
-        </div>
-    </nav>
-    <!-- use react -->
-    <section id="about">
-        <h1 class="title">About</h1>
-        <!-- <p>Welcome to my portfolio! I'm a Mechatronics Engineer, interested in Robotics, Embedded Systems, Web development, and AI. Passionate about creating innovative solutions.</p> -->
-        <p>
-            Welcome to my portfolio! I'm Ahmed Farahat, a Mechatronics Engineer focusing on <abbr>Robotics</abbr>, <abbr>AI</abbr>, <abbr>Web Development</abbr>, and <abbr>Software Engineering</abbr>. 
-            With experience in <abbr>Embedded Systems</abbr>, <abbr>ROS & ROS2</abbr>, <abbr>MATLAB & Simulink</abbr>, and <abbr>SolidWorks</abbr>. 
-            Driven to contribute creative solutions to advanced engineering challenges.
-        </p>
-    </section>
 
-    <section id="projects">
-        <h1 class="title">Projects</h1>
-        <div class="project-cards"></div>
-    </section>
-
-    <section id="skills" class="container">
-        <h1 class="title">Skills</h1>
-        <div class="skill-cards card-wrapper">
-            <button class="arrow left">&larr;</button>
-            <div class="card-container"></div>
-            <button class="arrow right">&rarr;</button>
-        </div>
-    </section>
-
-    <footer id="contact" class="dark-theme">
-        <h1 class="title" id="contact-heading">Contact</h1>
-        <br>
-        <span>Feel free to reach out through these platforms</span>
-        <div class="social-links">
-            <a href="mailto:ahmedfarahat1177.com" class="social-icon">
-                <img class="icon" src="./images/gmail-bw.logo.png" alt="Gmail icon">
-            </a>
-            <a href="https://wa.link/wm2plp" target="_blank" rel="noopener" class="social-icon">
-                <img class="icon" src="./images/wa-bw.png" alt="WhatsApp icon">
-            </a>
-            <a href="https://www.linkedin.com/in/ahmed-farahat-87038320b/" target="_blank" rel="noopener" class="social-icon">
-                <img class="icon" src="./images/linkedin-bw.png" alt="LinkedIn icon">
-            </a>
-            <a href="https://github.com/Baby-Madara" target="_blank" rel="noopener" class="social-icon">
-                <img class="icon" src="./images/github-bw.png" alt="GitHub icon">
-            </a>
-        </div>
-        <br>
-        <span>© 2024 Ahmed Farahat. Built with ❤️ and hosted on GitHub.</span>
-    </footer>
-
-    <script src="js/script.js"></script>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
+
